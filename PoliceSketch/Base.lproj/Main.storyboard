@@ -1,8 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,26 +19,94 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eyes_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NY4-Kv-j1f">
-                                <rect key="frame" x="49" y="56" width="216" height="100"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXb-1x-fkn">
-                                <rect key="frame" x="5" y="56" width="56" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXb-1x-fkn">
+                                <rect key="frame" x="12" y="70" width="50" height="100"/>
                                 <state key="normal" image="arrow_left.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaW-ja-FCK">
-                                <rect key="frame" x="257" y="56" width="61" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaW-ja-FCK">
+                                <rect key="frame" x="312" y="70" width="50" height="100"/>
                                 <state key="normal" image="arrow_right.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMd-pc-Ujt">
+                                <rect key="frame" x="12" y="220" width="50" height="100"/>
+                                <state key="normal" image="arrow_left.jpg">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rc7-yN-0V4">
+                                <rect key="frame" x="312" y="220" width="50" height="100"/>
+                                <state key="normal" image="arrow_right.jpg">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nXf-VO-88g">
+                                <rect key="frame" x="77" y="70" width="220" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="E8e-zg-J3d"/>
+                                    <constraint firstAttribute="height" constant="100" id="km4-0G-7YF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="47K-H3-TZK">
+                                <rect key="frame" x="77" y="220" width="220" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4vv-Aq-egR"/>
+                                    <constraint firstAttribute="width" constant="220" id="YLV-OR-6Cw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F78-2j-Rtq">
+                                <rect key="frame" x="77" y="370" width="220" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0Ni-U9-mQI"/>
+                                    <constraint firstAttribute="width" constant="220" id="zBW-jA-gQK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAi-sa-so4">
+                                <rect key="frame" x="12" y="370" width="50" height="100"/>
+                                <state key="normal" image="arrow_left.jpg">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE3-cY-XBw">
+                                <rect key="frame" x="312" y="370" width="50" height="100"/>
+                                <state key="normal" image="arrow_right.jpg">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nAi-sa-so4" firstAttribute="top" secondItem="oMd-pc-Ujt" secondAttribute="bottom" constant="50" id="3Qj-HR-RHo"/>
+                            <constraint firstItem="oMd-pc-Ujt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-4" id="Czs-sX-Cu9"/>
+                            <constraint firstItem="F78-2j-Rtq" firstAttribute="top" secondItem="47K-H3-TZK" secondAttribute="bottom" constant="50" id="E9g-et-FJa"/>
+                            <constraint firstItem="yXb-1x-fkn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="Hbh-wy-F5b"/>
+                            <constraint firstItem="bE3-cY-XBw" firstAttribute="top" secondItem="Rc7-yN-0V4" secondAttribute="bottom" constant="50" id="JBb-I6-MCt"/>
+                            <constraint firstItem="Rc7-yN-0V4" firstAttribute="leading" secondItem="47K-H3-TZK" secondAttribute="trailing" constant="15" id="L3J-ek-0Lx"/>
+                            <constraint firstItem="F78-2j-Rtq" firstAttribute="leading" secondItem="nAi-sa-so4" secondAttribute="trailing" constant="15" id="QMl-NQ-Toq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bE3-cY-XBw" secondAttribute="trailing" constant="-3" id="QQb-aG-Hzg"/>
+                            <constraint firstItem="nXf-VO-88g" firstAttribute="leading" secondItem="yXb-1x-fkn" secondAttribute="trailing" constant="15" id="SXn-yu-Tda"/>
+                            <constraint firstItem="bE3-cY-XBw" firstAttribute="leading" secondItem="F78-2j-Rtq" secondAttribute="trailing" constant="15" id="Wmi-WU-rVf"/>
+                            <constraint firstItem="nAi-sa-so4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-4" id="Ypd-At-zFI"/>
+                            <constraint firstItem="oMd-pc-Ujt" firstAttribute="top" secondItem="yXb-1x-fkn" secondAttribute="bottom" constant="50" id="Z9s-nM-hvC"/>
+                            <constraint firstItem="47K-H3-TZK" firstAttribute="leading" secondItem="oMd-pc-Ujt" secondAttribute="trailing" constant="15" id="aMo-BM-icg"/>
+                            <constraint firstItem="Rc7-yN-0V4" firstAttribute="top" secondItem="oaW-ja-FCK" secondAttribute="bottom" constant="50" id="aPf-H9-GB7"/>
+                            <constraint firstItem="47K-H3-TZK" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="bX1-gD-6uK"/>
+                            <constraint firstItem="F78-2j-Rtq" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="fJU-7X-xfV"/>
+                            <constraint firstItem="nXf-VO-88g" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="fzq-XB-yjU"/>
+                            <constraint firstItem="oaW-ja-FCK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="mmP-jV-r6j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rc7-yN-0V4" secondAttribute="trailing" constant="-3" id="nUw-t9-HOB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oaW-ja-FCK" secondAttribute="trailing" constant="-3" id="ngo-yq-GkT"/>
+                            <constraint firstItem="oaW-ja-FCK" firstAttribute="leading" secondItem="nXf-VO-88g" secondAttribute="trailing" constant="15" id="ngx-TE-c8I"/>
+                            <constraint firstItem="yXb-1x-fkn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-4" id="qRe-Qa-2Eb"/>
+                            <constraint firstItem="nXf-VO-88g" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="qbu-f5-nzP"/>
+                            <constraint firstItem="47K-H3-TZK" firstAttribute="top" secondItem="nXf-VO-88g" secondAttribute="bottom" constant="50" id="waK-5L-W08"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -43,6 +116,10 @@
     <resources>
         <image name="arrow_left.jpg" width="50" height="100"/>
         <image name="arrow_right.jpg" width="50" height="100"/>
-        <image name="eyes_1.jpg" width="220" height="100"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>
