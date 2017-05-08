@@ -45,20 +45,12 @@
                           [UIImage imageNamed:@"mouth_5.jpg"]
                           ];
         _mouthImageIndex = 0;
-        
-//        _selectedEyeImage = _eyeImages[0];
-//        _selectedNoseImage = _noseImages[0];
-//        _selectedMouthImage = _mouthImages[0];
-
     
     }
     
     
     return self;
 }
-
-
-//    return self.eyeImages[self.eyeImageIndex];
 
 -(UIImage *)nextEyeImage {
 
