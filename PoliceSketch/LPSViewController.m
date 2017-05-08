@@ -11,6 +11,12 @@
 
 @interface LPSViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *eyesImage;
+@property (weak, nonatomic) IBOutlet UIImageView *noseImage;
+@property (weak, nonatomic) IBOutlet UIImageView *mouthImage;
+@property (nonatomic) SketchImageHandler *imageHandler;
+
+
 @end
 
 @implementation LPSViewController
@@ -19,8 +25,40 @@
 {
     [super viewDidLoad];
     
-    SketchImageHandler *imageHandler = [[SketchImageHandler alloc]init];
-    
+    self.imageHandler = [[SketchImageHandler alloc]init];
+    self.eyesImage.image = self.imageHandler.selectedEyeImage;
+    self.noseImage.image = self.imageHandler.selectedNoseImage;
+    self.mouthImage.image = self.imageHandler.selectedMouthImage;
 }
+- (IBAction)nextEyeImageButton:(id)sender {
+    
+    self.eyesImage.image = [self.imageHandler nextEyeImage];
+}
+
+- (IBAction)previousEyeImageButton:(id)sender {
+    
+    self.eyesImage.image = [self.imageHandler previousEyeImage];
+}
+
+- (IBAction)nextNoseImageButton:(id)sender {
+    
+    self.noseImage.image = [self.imageHandler nextNoseImage];
+}
+
+- (IBAction)previousNoseImageButton:(id)sender {
+    
+    self.noseImage.image = [self.imageHandler previousNoseImage];
+}
+
+- (IBAction)nextMouthImageButton:(id)sender {
+    
+    self.mouthImage.image = [self.imageHandler nextMouthImage];
+}
+
+- (IBAction)previousMouthImageButton:(id)sender {
+    
+    self.mouthImage.image = [self.imageHandler previousMouthImage];
+}
+
 
 @end
