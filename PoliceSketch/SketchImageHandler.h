@@ -18,8 +18,16 @@
 @property (nonatomic, copy) NSArray *noseImages;
 @property (nonatomic, copy) NSArray *mouthImages;
 
+
 @property (nonatomic) UIImage *selectedEyeImage;
 @property (nonatomic) UIImage *selectedNoseImage;
 @property (nonatomic) UIImage *selectedMouthImage;
+
+-(UIImage *)nextEyeImage;
+-(UIImage *)previousEyeImage;
+-(UIImage *)nextNoseImage;
+-(UIImage *)previousNoseImage;
+-(UIImage *)nextMouthImage;
+-(UIImage *)previousMouthImage;
 
 @end

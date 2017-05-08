@@ -7,6 +7,7 @@
 //
 
 #import "LPSViewController.h"
+#import "SketchImageHandler.h"
 
 @interface LPSViewController ()
 
@@ -17,8 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-    // Here is where you will create the buttons & image views and add them to the view.
+    
+    SketchImageHandler *imageHandler = [[SketchImageHandler alloc]init];
+    
 }
 
 @end
