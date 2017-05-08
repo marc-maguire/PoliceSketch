@@ -46,9 +46,9 @@
                           ];
         _mouthImageIndex = 0;
         
-        _selectedEyeImage = _eyeImages[0];
-        _selectedNoseImage = _noseImages[0];
-        _selectedMouthImage = _mouthImages[0];
+//        _selectedEyeImage = _eyeImages[0];
+//        _selectedNoseImage = _noseImages[0];
+//        _selectedMouthImage = _mouthImages[0];
 
     
     }

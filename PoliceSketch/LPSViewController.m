@@ -26,9 +26,12 @@
     [super viewDidLoad];
     
     self.imageHandler = [[SketchImageHandler alloc]init];
-    self.eyesImage.image = self.imageHandler.selectedEyeImage;
-    self.noseImage.image = self.imageHandler.selectedNoseImage;
-    self.mouthImage.image = self.imageHandler.selectedMouthImage;
+//    self.eyesImage.image = self.imageHandler.selectedEyeImage;
+//    self.noseImage.image = self.imageHandler.selectedNoseImage;
+//    self.mouthImage.image = self.imageHandler.selectedMouthImage;
+    self.eyesImage.image = self.imageHandler.eyeImages[0];
+    self.noseImage.image = self.imageHandler.noseImages[0];
+    self.mouthImage.image = self.imageHandler.mouthImages[0];
 }
 - (IBAction)nextEyeImageButton:(id)sender {
     
