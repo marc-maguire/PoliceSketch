@@ -61,7 +61,7 @@
 //    return self.eyeImages[self.eyeImageIndex];
 
 -(UIImage *)nextEyeImage {
-    
+
     if (self.eyeImageIndex < self.eyeImages.count-1) {
         self.eyeImageIndex ++;
         return self.eyeImages[self.eyeImageIndex];

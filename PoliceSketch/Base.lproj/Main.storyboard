@@ -28,7 +28,7 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="previousEyeImageButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SXa-xi-bAv"/>
+                                    <action selector="cycleEyeImageButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wpM-u9-WMP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaW-ja-FCK">
@@ -37,7 +37,7 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextEyeImageButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gvh-Y5-Nt5"/>
+                                    <action selector="cycleEyeImageButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lZS-yP-4Dn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMd-pc-Ujt">
@@ -46,16 +46,16 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="previousNoseImageButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eZf-rD-6XZ"/>
+                                    <action selector="cycleNoseImageButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Zdt-jj-8pJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rc7-yN-0V4">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rc7-yN-0V4">
                                 <rect key="frame" x="312" y="220" width="50" height="100"/>
                                 <state key="normal" image="arrow_right.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextNoseImageButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nDY-cD-h8p"/>
+                                    <action selector="cycleNoseImageButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j9N-7R-V2H"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nXf-VO-88g">
@@ -85,16 +85,16 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="previousMouthImageButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ybQ-Ir-eAU"/>
+                                    <action selector="cycleMouthImageButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Tux-rr-xri"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE3-cY-XBw">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE3-cY-XBw">
                                 <rect key="frame" x="312" y="370" width="50" height="100"/>
                                 <state key="normal" image="arrow_right.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextMouthImageButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OXY-10-0mD"/>
+                                    <action selector="cycleMouthImageButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZgW-Sj-G0I"/>
                                 </connections>
                             </button>
                         </subviews>

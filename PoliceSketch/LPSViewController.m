@@ -26,42 +26,43 @@
     [super viewDidLoad];
     
     self.imageHandler = [[SketchImageHandler alloc]init];
-//    self.eyesImage.image = self.imageHandler.selectedEyeImage;
-//    self.noseImage.image = self.imageHandler.selectedNoseImage;
-//    self.mouthImage.image = self.imageHandler.selectedMouthImage;
+
     self.eyesImage.image = self.imageHandler.eyeImages[0];
     self.noseImage.image = self.imageHandler.noseImages[0];
     self.mouthImage.image = self.imageHandler.mouthImages[0];
 }
-- (IBAction)nextEyeImageButton:(id)sender {
+
+
+- (IBAction)cycleEyeImageButton:(UIButton *)sender {
     
-    self.eyesImage.image = [self.imageHandler nextEyeImage];
+    if (sender.tag == 0) {
+        self.eyesImage.image = [self.imageHandler previousEyeImage];
+    } else {
+        
+        self.eyesImage.image = [self.imageHandler nextEyeImage];
+    }
 }
 
-- (IBAction)previousEyeImageButton:(id)sender {
+- (IBAction)cycleNoseImageButton:(UIButton *)sender {
     
-    self.eyesImage.image = [self.imageHandler previousEyeImage];
+    if (sender.tag == 0) {
+        self.noseImage.image = [self.imageHandler previousNoseImage];
+    } else {
+        self.noseImage.image = [self.imageHandler nextNoseImage];
+    }
 }
 
-- (IBAction)nextNoseImageButton:(id)sender {
+- (IBAction)cycleMouthImageButton:(UIButton *)sender {
     
-    self.noseImage.image = [self.imageHandler nextNoseImage];
+    if (sender.tag == 0) {
+        self.mouthImage.image = [self.imageHandler previousMouthImage];
+    } else {
+        self.mouthImage.image = [self.imageHandler nextMouthImage];
+    }
 }
 
-- (IBAction)previousNoseImageButton:(id)sender {
-    
-    self.noseImage.image = [self.imageHandler previousNoseImage];
-}
 
-- (IBAction)nextMouthImageButton:(id)sender {
-    
-    self.mouthImage.image = [self.imageHandler nextMouthImage];
-}
 
-- (IBAction)previousMouthImageButton:(id)sender {
-    
-    self.mouthImage.image = [self.imageHandler previousMouthImage];
-}
 
 
 @end
